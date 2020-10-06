@@ -13,6 +13,13 @@
 		0F4B4B32252C758400FA5FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4B4B31252C758400FA5FFD /* Assets.xcassets */; };
 		0F4B4B35252C758400FA5FFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F4B4B34252C758400FA5FFD /* Preview Assets.xcassets */; };
 		0F4B4B38252C758400FA5FFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F4B4B36252C758400FA5FFD /* LaunchScreen.storyboard */; };
+		0F4B4B41252C778F00FA5FFD /* Covid19API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B4B40252C778F00FA5FFD /* Covid19API.swift */; };
+		0F4B4B45252C7E4800FA5FFD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B4B44252C7E4800FA5FFD /* Model.swift */; };
+		0F4B4B49252C7E7C00FA5FFD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B4B48252C7E7C00FA5FFD /* Utils.swift */; };
+		0F4B4B4E252C7F0E00FA5FFD /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B4B4D252C7F0E00FA5FFD /* Helpers.swift */; };
+		0F4B4B54252C806100FA5FFD /* PieChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B4B51252C806100FA5FFD /* PieChartRow.swift */; };
+		0F4B4B55252C806100FA5FFD /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B4B52252C806100FA5FFD /* PieChartView.swift */; };
+		0F4B4B56252C806100FA5FFD /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4B4B53252C806100FA5FFD /* PieChartCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		0F4B4B34252C758400FA5FFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0F4B4B37252C758400FA5FFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F4B4B39252C758400FA5FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F4B4B40252C778F00FA5FFD /* Covid19API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19API.swift; sourceTree = "<group>"; };
+		0F4B4B44252C7E4800FA5FFD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0F4B4B48252C7E7C00FA5FFD /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		0F4B4B4D252C7F0E00FA5FFD /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		0F4B4B51252C806100FA5FFD /* PieChartRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartRow.swift; sourceTree = "<group>"; };
+		0F4B4B52252C806100FA5FFD /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		0F4B4B53252C806100FA5FFD /* PieChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,10 @@
 		0F4B4B2A252C758300FA5FFD /* Covid19Stats */ = {
 			isa = PBXGroup;
 			children = (
+				0F4B4B40252C778F00FA5FFD /* Covid19API.swift */,
+				0F4B4B44252C7E4800FA5FFD /* Model.swift */,
+				0F4B4B48252C7E7C00FA5FFD /* Utils.swift */,
+				0F4B4B4C252C7EB200FA5FFD /* Chart Views */,
 				0F4B4B2B252C758300FA5FFD /* AppDelegate.swift */,
 				0F4B4B2D252C758300FA5FFD /* SceneDelegate.swift */,
 				0F4B4B2F252C758300FA5FFD /* ContentView.swift */,
@@ -73,6 +91,17 @@
 				0F4B4B34252C758400FA5FFD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0F4B4B4C252C7EB200FA5FFD /* Chart Views */ = {
+			isa = PBXGroup;
+			children = (
+				0F4B4B4D252C7F0E00FA5FFD /* Helpers.swift */,
+				0F4B4B53252C806100FA5FFD /* PieChartCell.swift */,
+				0F4B4B51252C806100FA5FFD /* PieChartRow.swift */,
+				0F4B4B52252C806100FA5FFD /* PieChartView.swift */,
+			);
+			path = "Chart Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +174,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F4B4B55252C806100FA5FFD /* PieChartView.swift in Sources */,
+				0F4B4B45252C7E4800FA5FFD /* Model.swift in Sources */,
+				0F4B4B4E252C7F0E00FA5FFD /* Helpers.swift in Sources */,
+				0F4B4B41252C778F00FA5FFD /* Covid19API.swift in Sources */,
 				0F4B4B2C252C758300FA5FFD /* AppDelegate.swift in Sources */,
+				0F4B4B56252C806100FA5FFD /* PieChartCell.swift in Sources */,
+				0F4B4B54252C806100FA5FFD /* PieChartRow.swift in Sources */,
 				0F4B4B2E252C758300FA5FFD /* SceneDelegate.swift in Sources */,
 				0F4B4B30252C758300FA5FFD /* ContentView.swift in Sources */,
+				0F4B4B49252C7E7C00FA5FFD /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
